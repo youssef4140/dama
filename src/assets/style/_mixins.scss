@@ -1,0 +1,51 @@
+$darkgrey: #5F5F5F;
+$grey: #9D9D9D;
+$offwhite: #E9E9E9;
+$lilac: #E3E7FC;
+$blue: #2CA8FE;
+$darkblue: #4541F0;
+$black: black;
+$darkLilac: #90A0F5;
+
+$radius: 40px;
+
+
+$maxWidth: 1080px;
+
+@mixin sectionPadding {
+    padding: 6rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem;
+
+    }
+
+}
+
+.sectionHeader {
+    color: $grey;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sectionText {
+    color: $grey;
+    font-weight: 300;
+    font-size: 1.7rem;
+
+    &.big {
+        font-size: 2.5rem;
+    }
+    &.bigger{
+        font-size:3rem;
+        font-weight: 500;
+    }
+
+    .blue {
+        color: $darkblue;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+}
