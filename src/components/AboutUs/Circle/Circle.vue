@@ -155,13 +155,18 @@ onMounted(() => {
 </template>
 <style lang="scss" scoped>
 .circle-cont {
-    
-    height: 32rem;
+
+    // height: 32rem;
+    width: 90vw;
     aspect-ratio: 1/1;
     border-radius: 100vh;
     background-color: transparent;
     position: relative;
     // overflow: hidden;
+    @media screen and (min-width: 768px) {
+        width:32vw;
+        
+    }
 
     .dot {
         background-color: black;
@@ -218,6 +223,7 @@ onMounted(() => {
         &.data {
             height: 0.3rem;
             width: 0.3rem;
+            border-radius: 0;
             background-color: transparent;
 
             span {
@@ -238,8 +244,8 @@ onMounted(() => {
             position: absolute;
             top: -2rem;
             left: 1rem;
-            font-size: 1.2rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 500;
 
         }
 

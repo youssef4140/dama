@@ -74,26 +74,27 @@ $hero-font: 6rem;
     font-size: $size;
 
     @media screen and (max-width: 768px) {
-        font-size: $size * 0.9;
+        font-size: $size * 0.8;
 
     }
 
     @media screen and (max-width: 576px) {
-        font-size: $size * 0.6;
+        font-size: $size * 0.57;
 
     }
     @media screen and (max-width: 410px) {
-        font-size: $size * 0.5;
+        font-size: $size * 0.47;
 
     }
     @media screen and (max-width: 320px) {
-        font-size: $size * 0.4;
+        font-size: $size * 0.37;
 
     }
     
 }
 
 .hero-wrapper {
+    
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
@@ -104,7 +105,7 @@ $hero-font: 6rem;
         flex-direction: column-reverse;
         // align-items: center;
         // justify-content: flex-start;
-        padding: 4rem 1rem;
+        padding: 8rem 1rem;
 
     }
 

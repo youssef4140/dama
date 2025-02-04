@@ -19,11 +19,7 @@ const emit = defineEmits(['toggleMenu']);
 
 <style lang="scss" scoped>
 .btn-wrapper {
-    height: 100%;
-    aspect-ratio: 1/1;
-    // height:100%;
-    padding: 1.2rem;
-    // width:5rem;
+    padding: 1.8rem;
     height: 100%;
     background-color: transparent;
     border: 1px solid $darkblue;
@@ -32,10 +28,21 @@ const emit = defineEmits(['toggleMenu']);
     cursor: pointer;
     transition: all 0.8s;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    >svg>path {
+    >svg{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        height:48%;
+        width:48%;
+        
+        >path {
         fill: $darkblue;
-    }
+    }}
 
     &.active {
         background-color: white;

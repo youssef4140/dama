@@ -12,13 +12,31 @@ $radius: 40px;
 
 $maxWidth: 1080px;
 
+$sectionPadding: 6rem;
+
 @mixin sectionPadding {
-    padding: 6rem;
+    padding: $sectionPadding;
 
     @media screen and (max-width: 768px) {
-        padding: 2rem;
+        padding: calc($sectionPadding / 3);
 
     }
+
+}
+
+@mixin headerMargin {
+    margin-left: $sectionPadding;
+    margin-top:$sectionPadding;
+    @media screen and (max-width: 768px) {
+        margin-left: calc($sectionPadding / 3);
+        margin-top: calc($sectionPadding / 3);
+        
+    }
+}
+
+.sectionHeader-m {
+    @extend .sectionHeader;
+    @include headerMargin();
 
 }
 
@@ -49,3 +67,27 @@ $maxWidth: 1080px;
         font-weight: 700;
     }
 }
+
+
+@mixin scrollBar() {
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      display:none;
+    }
+  
+    &::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+  
+  
+    &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #D9D9D9;
+    }
+  
+  
+  
+  }

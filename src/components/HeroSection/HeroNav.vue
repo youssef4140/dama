@@ -37,6 +37,10 @@
     align-items: center;
     justify-content: space-between;
     z-index:1;
+    @media screen and (max-width: 768px) {
+       left:-1rem;
+        
+    }
     // background-color: green;
 
     .logo,

@@ -25,13 +25,13 @@ import HeroNav from './HeroNav.vue';
     // border-radius: $radius;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     padding-top:2vh;
 }
 .hero_hero {
     width:98%;
-    min-height: 94vh;
+    min-height: 95vh;
 
     background-color: white;
     border-radius: $radius ;
@@ -39,6 +39,10 @@ import HeroNav from './HeroNav.vue';
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    // @media screen and (max-width: 768px) {
+        // width:96%;
+        
+    // }
 
 }
 

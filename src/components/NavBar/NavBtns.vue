@@ -34,7 +34,7 @@ const toggleMenu = (e: boolean) => {
     justify-content: center;
     // justify-content: flex-end;
     gap:2rem;
-    @media(max-width:375px){
+    @media(max-width:768px){
         gap:0.5rem;
         
     }

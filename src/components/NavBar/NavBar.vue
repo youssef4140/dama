@@ -30,5 +30,9 @@ const toggleMenu = () => {
     // height:4rem;
     // width:100%;
     z-index:3;
+    @media screen and (max-width: 768px) {
+        right:-1rem;
+        
+    }
 }
 </style>

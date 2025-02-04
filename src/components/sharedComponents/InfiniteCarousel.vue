@@ -43,7 +43,7 @@ const props = defineProps(
             }
 
             100% {
-                transform: translateX(calc(-50% - 1rem));
+                transform: translateX(calc(-50%));
             }
         }
     }
