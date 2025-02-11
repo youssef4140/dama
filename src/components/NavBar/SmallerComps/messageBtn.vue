@@ -21,7 +21,7 @@ const emit = defineEmits(['toggleMenu']);
 .btn-wrapper {
     padding: 1.8rem;
     height: 100%;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid $darkblue;
     border-radius: 100vh;
     position: relative;

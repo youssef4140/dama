@@ -23,7 +23,7 @@ const props = defineProps<{
     // flex-direction: column;
     padding: 1.2rem 1.5rem;
     // height:100%;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid $darkblue;
     border-radius: $radius;
     transition: all 0.5s;
