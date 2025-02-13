@@ -15,7 +15,7 @@ const props = defineProps(
         <div class="carousel-inner" :style="{animationDuration: `${props.animationDuration}s`}">
             <slot></slot>
             <slot></slot>
-
+            <!-- <h1>7aga</h1> -->
         </div>
     </div>
 </template>
